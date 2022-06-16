@@ -6,13 +6,13 @@
                 "./src/components/*"
             ],
             "@hooks/*": [
-                "./src/hooks/"
+                "./src/hooks/*"
             ],
-            "@helpers": [
-                "./src/helpers/"
+            "@helpers/*": [
+                "./src/helpers/*"
             ],
-            "@contexts": [
-                "./src/contexts/"
+            "@contexts/*": [
+                "./src/contexts/*"
             ]
         }
     }
