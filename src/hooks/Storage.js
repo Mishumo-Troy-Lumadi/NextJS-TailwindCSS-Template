@@ -11,8 +11,7 @@ function useStorage(objectStorage, key) {
 
     const setValue = useCallback(
         (value) => {
-            objectStorage.setItem(key, JSON.stringify(value))
-            setState(value)
+            typeof window !== 'undefined' && objectStorage.setItem(key, JSON.stringify(value))
         }, [key, objectStorage]
     )
 
