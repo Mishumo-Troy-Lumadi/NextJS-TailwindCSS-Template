@@ -15,7 +15,6 @@ function useStorage(objectStorage, key) {
         }, [key, objectStorage]
     )
 
-
     return [state, setValue]
 }
 
