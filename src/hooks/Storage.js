@@ -2,7 +2,7 @@ const { useState, useEffect, useCallback } = require("react");
 
 function useStorage(objectStorage, key) {
 
-    const [state, setState] = useState(null)
+    const [state, setState] = useState(undefined)
 
     useEffect(() => {
         const value = objectStorage.getItem(key)
