@@ -6,7 +6,7 @@ function useStorage(objectStorage, key) {
 
     useEffect(() => {
         const value = objectStorage.getItem(key)
-        item && setState(JSON.parse(value))
+        value && setState(JSON.parse(value))
     }, [objectStorage, key])
 
     const setValue = useCallback(
