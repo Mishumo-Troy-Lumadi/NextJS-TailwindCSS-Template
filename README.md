@@ -2,7 +2,13 @@
 
 ## Getting Started
 
-First, run the development server:
+Create a next js app using the template
+
+```bash
+npx create-next-app [your-project-name] -e https://github.com/Mishumo-Troy-Lumadi/NextJS-TailwindCSS-Template
+```
+
+then run the development server:
 
 ```bash
 npm run dev
