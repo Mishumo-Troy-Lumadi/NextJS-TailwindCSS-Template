@@ -21,11 +21,11 @@ function useStorage(objectStorage, key) {
 }
 
 function useSessionStorage(key) {
-    return useStorage(sessionStorage, key)
+    return useStorage(typeof window !== 'undefined' && sessionStorage, key)
 }
 
 function useLocalStorage(key) {
-    return useStorage(localStorage, key)
+    return useStorage(typeof window !== 'undefined' && localStorage, key)
 }
 
 export {
