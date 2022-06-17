@@ -1,7 +1,7 @@
 import { Column, Grid, Row } from "@components/base";
 
 function Layout({as = 'div', className = '', onClick = () => { }, children}) {
-    switch (as.toLowerCase) {
+    switch (as.toLowerCase()) {
         case 'column':
             return (
                 <Column {...{ className, onClick }}>
