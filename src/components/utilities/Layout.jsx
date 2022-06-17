@@ -1,6 +1,6 @@
 import { Column, Grid, Row } from "@components/base";
 
-function Layout(as = 'div', className = '', onClick = () => { }, children) {
+function Layout({as = 'div', className = '', onClick = () => { }, children}) {
     switch (as.toLowerCase) {
         case 'column':
             return (
@@ -25,9 +25,9 @@ function Layout(as = 'div', className = '', onClick = () => { }, children) {
 
         default:
             return (
-                <as {...{ className, onClick }}>
+                <div {...{ className, onClick }}>
                     {children}
-                </as>
+                </div>
             )
     }
 }

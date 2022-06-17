@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "./Layout";
 
-function Page({ title, description, favicon = '/favicon.ico', as, className, children }) {
+function Page({ title='', description='', favicon = '/favicon.ico', as='column', className='', children }) {
     return (
         <>
             <Head>
