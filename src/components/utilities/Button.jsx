@@ -5,7 +5,7 @@ function Button({ icon = '', label = '', className = 'text-white bg-blue-500 hov
 
     return (
         <button className={`flex items-center h-fit rounded transition-colors duration-300 ${spacing} ${padding} ${className}`} {...{onClick}}>
-            <span className='stroke-2 w-5 h-5'>{icon}</span>
+            <span className={`stroke-2 ${icon && 'w-5 h-5'}`}>{icon}</span>
             <span>{label}</span>
         </button>
     );
