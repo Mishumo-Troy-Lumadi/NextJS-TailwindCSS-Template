@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "./Layout";
+import { Layout } from "@troyio/components";
 
 function Page({ title='', description='', favicon = '/favicon.ico', as='column', className='', children }) {
     return (
