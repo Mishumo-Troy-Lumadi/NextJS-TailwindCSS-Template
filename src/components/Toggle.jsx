@@ -1,18 +1,19 @@
 import { Switch } from '@headlessui/react'
-import { useKeyToggle } from '@hooks/Toggle'
+import { useKeyToggle } from '@troyio/hooks'
 
-function Toggle({ keys=[],reader='toggle',onChange=()=>{}}) {
+function Toggle({ keys = [], reader = 'toggle', onChange = () => { } }) {
 
     const [toggle, setToggle] = useKeyToggle(keys)
 
-    function handleChange(e){
+    function handleChange(e) {
         setToggle()
-        onChange(e)
+        onChange()
     }
 
     return (
 
         <Switch
+            as='div'
             checked={toggle}
             onChange={handleChange}
             className={`${toggle ? 'bg-blue-500' : 'bg-neutral-500'}

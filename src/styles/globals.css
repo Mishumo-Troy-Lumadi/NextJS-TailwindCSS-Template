@@ -8,7 +8,11 @@ body {
 }
 
 * {
-	@apply font-Poppins box-border;
+	@apply font-Poppins box-border transition duration-300;
+}
+
+svg{
+	@apply stroke-1 w-6 h-6;
 }
 
 .empty {
